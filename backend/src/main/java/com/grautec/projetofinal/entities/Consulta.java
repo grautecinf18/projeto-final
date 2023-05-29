@@ -17,7 +17,7 @@ public class Consulta implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id_consulta;
+	private Integer idConsulta;
 	private String dataDaConsulta;
 	private String horaDaConsulta;
 	
@@ -31,10 +31,10 @@ public class Consulta implements Serializable{
 	
 	public Consulta() {}
 
-	public Consulta(Integer id_consulta, String dataDaConsulta, String horaDaConsulta, Medico medico,
+	public Consulta(Integer idConsulta, String dataDaConsulta, String horaDaConsulta, Medico medico,
 			Cliente paciente) {
 		super();
-		this.id_consulta = id_consulta;
+		this.idConsulta = idConsulta;
 		this.dataDaConsulta = dataDaConsulta;
 		this.horaDaConsulta = horaDaConsulta;
 		this.medico = medico;
@@ -42,11 +42,11 @@ public class Consulta implements Serializable{
 	}
 
 	public Integer getId_consulta() {
-		return id_consulta;
+		return idConsulta;
 	}
 
-	public void setId_consulta(Integer id_consulta) {
-		this.id_consulta = id_consulta;
+	public void setId_consulta(Integer idConsulta) {
+		this.idConsulta = idConsulta;
 	}
 
 	public String getDataDaConsulta() {

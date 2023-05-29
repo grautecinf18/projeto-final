@@ -21,7 +21,7 @@ public class Cliente implements Serializable{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id_cliente;
+	private Integer idCliente;
 	private String nome;
 	private String CPF;
 	private String email;
@@ -35,11 +35,11 @@ public class Cliente implements Serializable{
 	public Cliente () {}
 
 	public Integer getId_cliente() {
-		return id_cliente;
+		return idCliente;
 	}
 
-	public void setId_cliente(Integer id_cliente) {
-		this.id_cliente = id_cliente;
+	public void setId_cliente(Integer idCliente) {
+		this.idCliente = idCliente;
 	}
 
 	public String getNome() {
@@ -88,7 +88,7 @@ public class Cliente implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id_cliente);
+		return Objects.hash(idCliente);
 	}
 
 	@Override
@@ -100,7 +100,7 @@ public class Cliente implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Cliente other = (Cliente) obj;
-		return Objects.equals(id_cliente, other.id_cliente);
+		return Objects.equals(idCliente, other.idCliente);
 	}
 	
 	
