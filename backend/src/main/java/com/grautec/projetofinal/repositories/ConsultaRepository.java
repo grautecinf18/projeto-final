@@ -12,6 +12,6 @@ import com.grautec.projetofinal.entities.Consulta;
 public interface ConsultaRepository extends JpaRepository<Consulta, Integer>{
 
 	
-	@Query("select * from tb_consultas c where c.id_client = :id")
+	@Query("select c from Consulta c where c.paciente.idCliente = :id")
 	List<Consulta> consultasPacienteId(Integer id);
 }

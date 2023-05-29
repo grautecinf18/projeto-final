@@ -21,7 +21,7 @@ public class Medico implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id_medico;
+	private Integer idMedico;
 	private String nome;
 	private String especialidade;
 	
@@ -31,19 +31,19 @@ public class Medico implements Serializable{
 	
 	public Medico() {}
 
-	public Medico(Integer id_medico, String nome, String especialidade) {
+	public Medico(Integer idMedico, String nome, String especialidade) {
 		super();
-		this.id_medico = id_medico;
+		this.idMedico = idMedico;
 		this.nome = nome;
 		this.especialidade = especialidade;
 	}
 
 	public Integer getId_medico() {
-		return id_medico;
+		return idMedico;
 	}
 
-	public void setId_medico(Integer id_medico) {
-		this.id_medico = id_medico;
+	public void setId_medico(Integer idMedico) {
+		this.idMedico = idMedico;
 	}
 
 	public String getNome() {
@@ -70,7 +70,7 @@ public class Medico implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(id_medico);
+		return Objects.hash(idMedico);
 	}
 
 	@Override
@@ -82,7 +82,7 @@ public class Medico implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Medico other = (Medico) obj;
-		return Objects.equals(id_medico, other.id_medico);
+		return Objects.equals(idMedico, other.idMedico);
 	}
 	
 	

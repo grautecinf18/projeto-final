@@ -19,7 +19,7 @@ import com.grautec.projetofinal.entities.Consulta;
 import com.grautec.projetofinal.services.ConsultaService;
 
 @RestController
-@RequestMapping("/consultas")
+@RequestMapping(value="/consultas")
 public class ConsultaResource {
 
 	@Autowired

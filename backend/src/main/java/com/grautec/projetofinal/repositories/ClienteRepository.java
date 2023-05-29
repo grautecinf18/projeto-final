@@ -9,6 +9,6 @@ import com.grautec.projetofinal.entities.Cliente;
 @Repository
 public interface ClienteRepository extends JpaRepository<Cliente, Integer>{
 
-	@Query("select e from tb_clientes e where e.email = :email and e.senha = :senha")
+	@Query("select e from Cliente e where e.email = :email and e.senha = :senha")
 	Cliente buscarLogin(String email, String senha);
 }
